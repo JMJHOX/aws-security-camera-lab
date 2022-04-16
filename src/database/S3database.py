@@ -12,7 +12,7 @@ class S3database(Database):
     def save_footage(self, footage_stream, filename: str):
         self.s3_client.upload_fileobj(
             footage_stream,
-            'hl-us1-stream-storage',
+            'hl-us1-stream-house-1',
             filename
         )
 
